@@ -1,4 +1,3 @@
-
 import React, { useRef, useState } from "react";
 const FindBMI = () => {
   const heightRef = useRef("");
@@ -11,10 +10,10 @@ const FindBMI = () => {
     if (height > 0 && weight > 0) {
       const bmi = weight / height ** 2;
       setOutput(bmi.toFixed(2));
-      heightRef.current.value=""
-      weightRef.current.value=""
+      heightRef.current.value = "";
+      weightRef.current.value = "";
     } else {
-      setOutput(""); 
+      setOutput("");
     }
   };
   return (
